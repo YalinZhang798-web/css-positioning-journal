@@ -6,8 +6,8 @@
    Complete the TODOs below to style the journal.
    Refer to instructions for detailed guidance.
    
-   Author: [Your Name Here]
-   Date: 02/02/2026
+   Author: [Yalin Zhang]
+   Date: 09/16/2026
 ============================================ */
 
 /* ============================================
@@ -39,9 +39,14 @@ body {
 ============================================ */
 
 #main-container {
-    /* YOUR CODE HERE */
-    
+    background-color: white;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
 }
+    
+
 
 /* ============================================
    STEP 3: HEADER STYLING
@@ -51,7 +56,10 @@ body {
 ============================================ */
 
 #header-box {
-    /* YOUR CODE HERE */
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
+    text-align: center;
     
 }
 
