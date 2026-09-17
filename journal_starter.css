@@ -95,13 +95,16 @@ body {
 ============================================ */
 
 #sidebar {
-    /* YOUR CODE HERE */
-    
+    float: left;
+    width: 25%;
+    padding: 20px;
+    background-color: #f0f0f0;
 }
 
 #content-area {
-    /* YOUR CODE HERE */
-    
+    float: left;
+    width: 75%;
+    padding: 20px;
 }
 
 /* ============================================
@@ -111,8 +114,9 @@ body {
 ============================================ */
 
 #main-container::after {
-    /* YOUR CODE HERE */
-    
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* ============================================
@@ -122,14 +126,29 @@ body {
 ============================================ */
 
 .journal-entry {
-    /* YOUR CODE HERE */
-    
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 .entry-image {
-    /* YOUR CODE HERE */
-    /* Add picture frame effect */
-    
+    float: left;
+    margin-right: 15px;
+    border: 12px solid #fff;
+    box-shadow: 0 0 0 2px #333;
+    padding: 8px;
+    background: white;
+}
+.entry-title {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.entry-date {
+    color: #888;
+    font-size: 0.9em;
 }
 
 /* ============================================
@@ -139,6 +158,36 @@ body {
 ============================================ */
 
 @media (max-width: 768px) {
-    /* YOUR CODE HERE */
+    #main-container {
+        width: 100%;
+        margin: 0;
+    }
     
+    #sidebar,
+    #content-area {
+        float: none;
+        width: 100%;
+    }
+    
+    #sidebar {
+        margin-bottom: 20px;
+    }
+}
+/* Special Feature #3: Extra Responsive Breakpoint */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #main-container {
+        max-width: 90%;
+    }
+
+    #sidebar {
+        width: 30%;
+    }
+
+    #content-area {
+        width: 70%;
+    }
+
+    .entry-image {
+        max-width: 150px;
+    }
 }
